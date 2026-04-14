@@ -21,7 +21,7 @@ return new class extends Migration
             $table->integer('mileage');
             $table->double('lat');
             $table->double('lng');
-            $table->integer('is_premium');
+            $table->boolean('is_premium');
             $table->integer('rental_count');
             $table->integer('daily_rate');
             $table->enum('status', ['available', 'rented', 'maintenance', 'retired']);

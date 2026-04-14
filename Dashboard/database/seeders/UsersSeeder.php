@@ -17,9 +17,9 @@ class UsersSeeder extends Seeder
     {
         DB::table("users")->insert([
             'name'=>"Luis Fimbres",
-            'email'=>Hash::make('23cg0472@itsncg.edu.mx'),
+            'email'=>"23cg0472@itsncg.edu.mx",
             'email_verified_at'=>now(),
-            'password'=>"1234",
+            'password'=>Hash::make('1234'),
             'created_at'=>date('Y-m-d h:m:s'),
             'loyalty_points'=>1234,
             'loyalty_level_id'=>1
@@ -27,8 +27,8 @@ class UsersSeeder extends Seeder
 
         $data = new User();
         $data -> name = "Luis Bermudez";
-        $data -> email = Hash::make('mail@mail.com');
-        $data -> password = "1234";
+        $data -> email = "mail@mail.com";
+        $data -> password = Hash::make('1234');
         $data -> loyalty_points = 1;
         $data -> loyalty_level_id = 1;
         $data -> save();

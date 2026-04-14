@@ -24,7 +24,7 @@ class CarsSeeder extends Seeder
             'mileage'=>138284,
             'lat'=>123.2,
             'lng'=>302.1,
-            'is_premium'=>1,
+            'is_premium'=>false,
             'rental_count'=>5,
             'daily_rate'=>1,
             'status'=>'rented',
@@ -40,7 +40,7 @@ class CarsSeeder extends Seeder
         $data -> mileage = 1234;
         $data -> lat = 483.4;
         $data -> lng = 934.1;
-        $data -> is_premium = 1;
+        $data -> is_premium = false;
         $data -> rental_count = 3;
         $data -> daily_rate = 2;
         $data -> status = 'rented';
